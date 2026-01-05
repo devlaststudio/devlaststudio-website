@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Block Puzzle Privacy Policy - Your privacy matters to us. Learn how we protect your data.">
+    <meta name="robots" content="noindex">
+
+    <title>Block Puzzle - Privacy Policy | DevLastStudio</title>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml"
+        href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect fill='%238b5cf6' rx='20' width='100' height='100'/><rect x='15' y='15' width='30' height='30' rx='4' fill='white' opacity='0.9'/><rect x='55' y='15' width='30' height='30' rx='4' fill='white' opacity='0.7'/><rect x='15' y='55' width='30' height='30' rx='4' fill='white' opacity='0.7'/><rect x='55' y='55' width='30' height='30' rx='4' fill='white' opacity='0.5'/></svg>">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="styles.css">
+
+    <style>
+        .app-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 0.5rem 1rem;
+            background: linear-gradient(135deg, rgba(139, 92, 246, 0.2) 0%, rgba(168, 85, 247, 0.1) 100%);
+            border: 1px solid rgba(139, 92, 246, 0.3);
+            border-radius: 2rem;
+            margin-bottom: 1rem;
+        }
+
+        .app-badge svg {
+            width: 24px;
+            height: 24px;
+            stroke: #8b5cf6;
+        }
+
+        .app-badge span {
+            font-weight: 600;
+            color: #a78bfa;
+        }
+
+        .highlight-box {
+            background: linear-gradient(135deg, rgba(34, 197, 94, 0.1) 0%, rgba(34, 197, 94, 0.05) 100%);
+            border: 1px solid rgba(34, 197, 94, 0.2);
+            border-radius: 1rem;
+            padding: 1.5rem;
+            margin: 2rem 0;
+        }
+
+        .highlight-box h3 {
+            color: #22c55e;
+            margin-bottom: 0.5rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .highlight-box p {
+            color: var(--color-text-secondary);
+            margin: 0;
+        }
+
+        .no-data-icon {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 48px;
+            height: 48px;
+            background: rgba(34, 197, 94, 0.1);
+            border-radius: 50%;
+            margin-bottom: 1rem;
+        }
+
+        .no-data-icon svg {
+            width: 24px;
+            height: 24px;
+            stroke: #22c55e;
+        }
+
+        .privacy-section {
+            margin-bottom: 2.5rem;
+        }
+
+        .privacy-section h2 {
+            margin-bottom: 1rem;
+        }
+
+        .check-list {
+            list-style: none;
+            padding: 0;
+        }
+
+        .check-list li {
+            display: flex;
+            align-items: flex-start;
+            gap: 0.75rem;
+            margin-bottom: 0.75rem;
+            color: var(--color-text-secondary);
+        }
+
+        .check-list li svg {
+            width: 20px;
+            height: 20px;
+            stroke: #22c55e;
+            flex-shrink: 0;
+            margin-top: 2px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a href="index.html" class="logo">
+                <div class="logo-icon">D</div>
+                <span class="logo-text">DevLastStudio</span>
+            </a>
+
+            <ul class="nav-menu" id="nav-menu">
+                <li><a href="index.html" class="nav-link" data-i18n="navHome">Home</a></li>
+                <li><a href="index.html#features" class="nav-link" data-i18n="navFeatures">Features</a></li>
+                <li><a href="index.html#apps" class="nav-link" data-i18n="navApps">Apps</a></li>
+                <li><a href="index.html#contact" class="nav-link" data-i18n="navContact">Contact</a></li>
+            </ul>
+
+            <div class="nav-right">
+                <!-- Language Selector -->
+                <div class="lang-selector" id="lang-selector">
+                    <button class="lang-btn" id="lang-btn" aria-label="Select language" aria-expanded="false"
+                        aria-haspopup="listbox">
+                        <span id="current-flag">🇬🇧</span>
+                        <span id="current-lang">EN</span>
+                        <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <path d="M6 9l6 6 6-6" />
+                        </svg>
+                    </button>
+                    <div class="lang-dropdown" id="lang-dropdown" role="listbox" aria-label="Select language">
+                        <button class="lang-option" data-lang="en" role="option">
+                            <span>🇬🇧</span> English
+                        </button>
+                        <button class="lang-option" data-lang="de" role="option">
+                            <span>🇩🇪</span> Deutsch
+                        </button>
+                        <button class="lang-option" data-lang="es" role="option">
+                            <span>🇪🇸</span> Español
+                        </button>
+                        <button class="lang-option" data-lang="fr" role="option">
+                            <span>🇫🇷</span> Français
+                        </button>
+                        <button class="lang-option" data-lang="it" role="option">
+                            <span>🇮🇹</span> Italiano
+                        </button>
+                        <button class="lang-option" data-lang="tr" role="option">
+                            <span>🇹🇷</span> Türkçe
+                        </button>
+                    </div>
+                </div>
+
+                <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <div class="app-badge">
+                <svg viewBox="0 0 24 24" fill="none" stroke-width="1.5">
+                    <rect x="3" y="3" width="7" height="7" rx="1" />
+                    <rect x="14" y="3" width="7" height="7" rx="1" />
+                    <rect x="3" y="14" width="7" height="7" rx="1" />
+                    <rect x="14" y="14" width="7" height="7" rx="1" />
+                </svg>
+                <span>Block Puzzle</span>
+            </div>
+            <h1 class="page-title" data-i18n="bpPrivacyTitle">Privacy Policy</h1>
+            <p class="page-subtitle" data-i18n="bpPrivacySubtitle">Last updated: January 2026</p>
+        </div>
+    </section>
+
+    <!-- Page Content -->
+    <main class="page-content container">
+
+        <!-- Highlight Box: No Personal Data -->
+        <div class="highlight-box">
+            <div class="no-data-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke-width="2">
+                    <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+                    <path d="M9 12l2 2 4-4" />
+                </svg>
+            </div>
+            <h3 data-i18n="bpHighlightTitle">🔒 Your Privacy is Our Priority</h3>
+            <p data-i18n="bpHighlightText">
+                <strong>Block Puzzle does not collect, store, or share any personal user data.</strong>
+                We believe in providing a fun gaming experience without compromising your privacy.
+            </p>
+        </div>
+
+        <div class="privacy-section">
+            <h2 data-i18n="bpNotCollectTitle">What We DON'T Collect</h2>
+            <p data-i18n="bpNotCollectText">We want to be crystal clear about what we never collect:</p>
+            <ul class="check-list">
+                <li>
+                    <svg viewBox="0 0 24 24" fill="none" stroke-width="2">
+                        <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" />
+                        <polyline points="22 4 12 14.01 9 11.01" />
+                    </svg>
+                    <span data-i18n="bpNotCollect1"><strong>No personal information</strong> – We don't ask for your
+                        name, email, phone number, or any other identifying information.</span>
+                </li>
+                <li>
+                    <svg viewBox="0 0 24 24" fill="none" stroke-width="2">
+                        <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" />
+                        <polyline points="22 4 12 14.01 9 11.01" />
+                    </svg>
+                    <span data-i18n="bpNotCollect2"><strong>No location data</strong> – We never access or track your
+                        geographic location.</span>
+                </li>
+                <li>
+                    <svg viewBox="0 0 24 24" fill="none" stroke-width="2">
+                        <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" />
+                        <polyline points="22 4 12 14.01 9 11.01" />
+                    </svg>
+                    <span data-i18n="bpNotCollect3"><strong>No contacts or photos</strong> – We have zero access to your
+                        contacts, photos, or files.</span>
+                </li>
+                <li>
+                    <svg viewBox="0 0 24 24" fill="none" stroke-width="2">
+                        <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" />
+                        <polyline points="22 4 12 14.01 9 11.01" />
+                    </svg>
+                    <span data-i18n="bpNotCollect4"><strong>No account required</strong> – Play instantly without
+                        registration or sign-up.</span>
+                </li>
+            </ul>
+        </div>
+
+        <div class="privacy-section">
+            <h2 data-i18n="bpTechnicalTitle">Technical Data for Performance</h2>
+            <p data-i18n="bpTechnicalText">
+                To ensure Block Puzzle runs smoothly and to improve your gaming experience, we may collect
+                minimal, anonymous technical data:
+            </p>
+            <ul>
+                <li data-i18n="bpTechnical1"><strong>Device Type & OS Version:</strong> To optimize the game for your
+                    specific device.</li>
+                <li data-i18n="bpTechnical2"><strong>Crash Reports:</strong> If the app unexpectedly closes, anonymous
+                    error logs help us identify and fix bugs quickly.</li>
+                <li data-i18n="bpTechnical3"><strong>Performance Metrics:</strong> Frame rates and loading times to
+                    ensure smooth gameplay.</li>
+            </ul>
+            <p style="margin-top: 1rem; color: var(--color-text-muted); font-size: 0.9rem;" data-i18n="bpTechnicalNote">
+                ⚡ This technical data is completely anonymous and cannot be used to identify you personally.
+            </p>
+        </div>
+
+        <div class="privacy-section">
+            <h2 data-i18n="bpThirdPartyTitle">Third-Party Data Sharing</h2>
+            <div class="highlight-box"
+                style="background: linear-gradient(135deg, rgba(99, 102, 241, 0.1) 0%, rgba(99, 102, 241, 0.05) 100%); border-color: rgba(99, 102, 241, 0.2);">
+                <h3 style="color: #6366f1;" data-i18n="bpNoShareTitle">🚫 We Never Share Your Data</h3>
+                <p data-i18n="bpNoShareText">
+                    <strong>Under no circumstances do we sell, rent, trade, or share any data with third
+                        parties.</strong>
+                    Your gaming experience stays between you and Block Puzzle. Period.
+                </p>
+            </div>
+            <p data-i18n="bpThirdPartyText">
+                We do not use third-party analytics services, advertising networks, or any external tools
+                that could track your behavior or collect your personal information.
+            </p>
+        </div>
+
+        <div class="privacy-section">
+            <h2 data-i18n="bpStorageTitle">Data Storage</h2>
+            <p data-i18n="bpStorageText">
+                All your game progress, high scores, and preferences are stored <strong>locally on your device</strong>.
+                This means:
+            </p>
+            <ul>
+                <li data-i18n="bpStorage1">Your data never leaves your device</li>
+                <li data-i18n="bpStorage2">You have complete control over your game data</li>
+                <li data-i18n="bpStorage3">Uninstalling the app removes all associated data</li>
+            </ul>
+        </div>
+
+        <div class="privacy-section">
+            <h2 data-i18n="bpChildrenTitle">Children's Privacy</h2>
+            <p data-i18n="bpChildrenText">
+                Block Puzzle is designed to be safe for players of all ages. Since we don't collect any personal
+                information, there's no risk of children's data being gathered or misused. Parents can feel
+                confident letting their children enjoy the game.
+            </p>
+        </div>
+
+        <div class="privacy-section">
+            <h2 data-i18n="bpChangesTitle">Changes to This Policy</h2>
+            <p data-i18n="bpChangesText">
+                We may update this privacy policy if our practices change. Any updates will be reflected on this
+                page with a new "Last updated" date. We encourage you to review this policy periodically.
+            </p>
+        </div>
+
+        <div class="privacy-section">
+            <h2 data-i18n="bpContactTitle">Contact Us</h2>
+            <p data-i18n="bpContactText">
+                If you have any questions, concerns, or feedback about this privacy policy or Block Puzzle,
+                please don't hesitate to reach out:
+            </p>
+            <p>
+                <strong data-i18n="privacyEmail">Email:</strong> <a href="mailto:contact@devlaststudio.com"
+                    style="color: var(--color-accent-primary);">contact@devlaststudio.com</a>
+            </p>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-links">
+                    <a href="privacy.html" class="footer-link" data-i18n="footerPrivacy">Privacy Policy</a>
+                    <a href="index.html#apps" class="footer-link" data-i18n="footerApps">Apps</a>
+                    <a href="index.html#contact" class="footer-link" data-i18n="footerContact">Contact</a>
+                </div>
+
+                <p class="footer-copyright" data-i18n="footerCopyright">
+                    © 2026 DevLastStudio. All rights reserved.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="translations.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
